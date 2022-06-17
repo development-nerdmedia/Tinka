@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+:root {
+  --fuente-oswald: 'Oswald', sans-serif;
+  --fuente-poppins: 'Poppins', sans-serif;
+  --color-verde: #0B682F;
+  --color-amarillo: #F2E52D;
+  --color-rojo: #DB2727; }
+
+.container {
+  width: 85%;
+  max-width: 1430px;
+  margin: 0 auto; }
+
+main {
+  overflow: hidden; }
+
+section.testimonios {
+  padding: 140px 0;
+  background-color: var(--color-amarillo); }
+  section.testimonios .card-testimonios {
+    position: relative;
+    margin: 85px 0; }
+  section.testimonios .person-testimonios {
+    padding-bottom: 85px; }
+  section.testimonios .content h2 {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: var(--color-verde);
+    font-family: var(--fuente-oswald); }
+  section.testimonios .content p {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    padding-top: 15px;
+    font-family: var(--fuente-poppins); }
+  section.testimonios .cards {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    section.testimonios .cards .card:nth-child(1)::after {
+      content: url(../icon/flecha.svg);
+      position: absolute;
+      right: -80px;
+      top: 40%; }
+    section.testimonios .cards .par {
+      transform: translateY(100px); }
+    section.testimonios .cards .par .card::after {
+      content: url(../icon/flecha.svg);
+      position: absolute;
+      transform: rotate(180deg);
+      left: -80px;
+      right: initial;
+      top: 40%; }
+  section.testimonios .card {
+    width: 364px;
+    border-radius: 10px;
+    border: 3px solid var(--color-verde);
+    background-color: #fff;
+    font-family: var(--fuente-poppins);
+    padding: 30px;
+    position: relative; }
+    section.testimonios .card img {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+    section.testimonios .card::after {
+      position: absolute; }
+    section.testimonios .card .person {
+      display: flex;
+      justify-content: center; }
+    section.testimonios .card .info {
+      padding: 17px 0; }
+      section.testimonios .card .info h3 {
+        font-weight: 700;
+        font-size: 22px;
+        color: var(--color-verde);
+        text-align: center; }
+      section.testimonios .card .info p {
+        font-weight: 500;
+        font-size: 20px;
+        color: #000;
+        text-align: center;
+        padding-top: 17px; }
+    section.testimonios .card .ubi {
+      padding-left: 11px;
+      display: flex;
+      justify-content: center; }
+      section.testimonios .card .ubi p {
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--color-verde);
+        position: relative;
+        text-align: center; }
+        section.testimonios .card .ubi p::before {
+          content: url(../icon/bullet.svg);
+          position: absolute;
+          top: -2px;
+          left: -15px; }
+  section.testimonios .btn {
+    display: flex;
+    justify-content: center; }
+    section.testimonios .btn a {
+      text-decoration: none;
+      color: #fff;
+      background-color: var(--color-rojo);
+      padding: 16px 27px;
+      font-family: var(--fuente-poppins);
+      font-weight: 600;
+      font-size: 20px;
+      border-radius: 30px; }
+  section.testimonios .img-tienda {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+
+section.beneficios,
+section.preguntas {
+  width: 100%;
+  height: 1000px; }
